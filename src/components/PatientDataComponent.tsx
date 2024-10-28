@@ -88,6 +88,7 @@ const PatientDataComponent = () => {
     return (
         <div className='mt-10 ml-10'>
             <div className='w-1/2 flex justify-between items-center mb-10'>
+            
             <button onClick={() => handleButtonClick()}>Заказать звонок</button>
             <button onClick={() => handleButtonClick2()}>Заказать справку</button>
             <button className="font-bold" onClick={() => handleClick()}>Выйти</button>
@@ -113,6 +114,7 @@ const PatientDataComponent = () => {
                 {pastAppointments.length > 0 &&
                     <div className='mb-5'>
                         <div className='mb-5'>  
+                            <h1 className='text-xl mb-3'>Пациент: {pastAppointments[0].patient}</h1>
                             <p>Личный счет: {pastAppointments[0].personal_account} руб</p>
                             <p>Семейный счет: {pastAppointments[0].family_account} руб</p>
                         </div>
